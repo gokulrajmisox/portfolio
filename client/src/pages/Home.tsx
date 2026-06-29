@@ -201,31 +201,31 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
-                  title: "3D Portfolio Website",
+                  title: "FoodBridge",
                   description:
-                    "An immersive portfolio showcasing 3D animations and interactive elements built with Three.js and React Three Fiber.",
-                  tags: ["React", "Three.js", "GSAP", "Tailwind"],
+                    "Real-time surplus food redistribution platform connecting donors, receivers, and volunteers. Features live map with urgency-coded pins, AI food safety analysis, gamification, and impact tracking. Rescues food, feeds communities, reduces waste.",
+                  tags: ["React", "Vite", "Supabase", "Express", "Leaflet", "OpenRouter"],
+                  link: "https://github.com/gokulrajmisox/foodbridge",
+                },
+                {
+                  title: "3D Interactive Portfolio",
+                  description:
+                    "Cinematic portfolio website with immersive 3D hero scene, floating geometric shapes, smooth scroll animations, and cyberpunk aesthetics. Showcases skills and projects with premium interactions.",
+                  tags: ["React", "Three.js", "GSAP", "Tailwind", "TypeScript"],
+                  link: "https://github.com/gokulrajmisox",
+                },
+                {
+                  title: "Coming Soon",
+                  description:
+                    "Exciting new project in development. Building innovative solutions with modern web technologies and creative design.",
+                  tags: ["React", "Node.js", "Full-Stack"],
                   link: "#",
                 },
                 {
-                  title: "E-Commerce Platform",
+                  title: "Coming Soon",
                   description:
-                    "Full-stack e-commerce solution with product catalog, shopping cart, and payment integration.",
-                  tags: ["React", "Node.js", "MongoDB", "Stripe"],
-                  link: "#",
-                },
-                {
-                  title: "Task Management App",
-                  description:
-                    "Collaborative task management tool with real-time updates and team collaboration features.",
-                  tags: ["React", "Firebase", "Tailwind", "TypeScript"],
-                  link: "#",
-                },
-                {
-                  title: "AI Chat Interface",
-                  description:
-                    "Modern chat interface with AI-powered responses and beautiful UI animations.",
-                  tags: ["React", "Python", "API", "Framer Motion"],
+                    "Another innovative project coming soon. Stay tuned for updates on GitHub.",
+                  tags: ["In Development"],
                   link: "#",
                 },
               ].map((project, idx) => (
@@ -251,12 +251,14 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <Button
-                    variant="outline"
-                    className="w-full neon-border text-accent hover:bg-accent/10"
-                  >
-                    View Project <ExternalLink className="ml-2 w-4 h-4" />
-                  </Button>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      variant="outline"
+                      className="w-full neon-border text-accent hover:bg-accent/10"
+                    >
+                      View Project <ExternalLink className="ml-2 w-4 h-4" />
+                    </Button>
+                  </a>
                 </motion.div>
               ))}
             </div>
@@ -287,21 +289,21 @@ export default function Home() {
                   company: "Google",
                   period: "Current",
                   description:
-                    "Promoting Google technologies and supporting student community initiatives.",
+                    "Promoting Google technologies and supporting student community initiatives. Building awareness and adoption of Google's developer tools and platforms.",
                 },
                 {
                   title: "B.E. Computer Science Engineering",
                   company: "Knowledge Institute of Technology (KIOT)",
                   period: "In Progress",
                   description:
-                    "Pursuing degree with focus on full-stack development and emerging technologies.",
+                    "Pursuing degree with focus on full-stack development, web technologies, and emerging innovations. Active in technical projects and community initiatives.",
                 },
                 {
                   title: "Developer Intern",
                   company: "Codec Technologies India",
                   period: "Recent",
                   description:
-                    "Worked on web development projects using modern React and JavaScript technologies.",
+                    "Worked on web development projects using React, JavaScript, and modern frameworks. Contributed to building scalable web applications and learning production-level development practices.",
                 },
               ].map((exp, idx) => (
                 <motion.div
@@ -392,9 +394,11 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 neon-glow px-8 py-6 text-lg">
-                Send Me an Email
-              </Button>
+              <a href="mailto:gokulrajmisox@gmail.com">
+                <Button className="bg-accent text-accent-foreground hover:bg-accent/90 neon-glow px-8 py-6 text-lg">
+                  Send Me an Email
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
         </div>
