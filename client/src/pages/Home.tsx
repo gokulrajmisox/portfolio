@@ -1,5 +1,7 @@
 import { HeroScene } from "@/components/HeroScene";
 import { Header } from "@/components/Header";
+import { CertificatesSection } from "@/components/CertificatesSection";
+import { LanguagesSection } from "@/components/LanguagesSection";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Instagram, Mail, ExternalLink } from "lucide-react";
@@ -266,6 +268,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Certificates Section */}
+      <CertificatesSection />
+
+      {/* Languages Section */}
+      <LanguagesSection />
+
       {/* Experience Section */}
       <section className="py-20 px-4 md:px-8 bg-card/30">
         <div className="max-w-6xl mx-auto">
@@ -284,6 +292,13 @@ export default function Home() {
 
             <div className="space-y-8">
               {[
+                {
+                  title: "Full-Stack Developer & Tech Mentor",
+                  company: "Self-Employed (Freelance)",
+                  period: "Feb 2026 - Present",
+                  description:
+                    "Independent Full-Stack Developer specializing in MERN stack applications, IoT & hardware integration, and tech mentorship. Building scalable digital solutions while empowering students through career guidance and internship mentoring.",
+                },
                 {
                   title: "Google Student Ambassador",
                   company: "Google",
